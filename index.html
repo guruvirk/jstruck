@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07090b">
+  <title>J.S. Truck Repair Centre | Coming Soon</title>
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+  <meta name="description" content="J.S. Truck Repair Centre in Brampton, Ontario. Our new website is coming soon.">
+  <style>
+    :root {
+      --bg: #07090b;
+      --text: #f5f7f9;
+      --muted: #9aa1a9;
+      --blue: #079ee8;
+      --line: #24292f
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, Arial, Helvetica, sans-serif
+    }
+
+    body {
+      min-height: 100vh
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 48px));
+      min-height: 100vh;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 44px 0 42px
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px
+    }
+
+    .logo {
+      width: 190px;
+      height: 92px;
+      object-fit: contain;
+      object-position: left center;
+      display: block
+    }
+
+    .hello {
+      font: 500 16px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: #d9dde2
+    }
+
+    .hello a {
+      color: #fff;
+      text-decoration: none
+    }
+
+    .hello a:hover {
+      color: #36b8ff
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px 0 25px
+    }
+
+    .title {
+      font-size: clamp(62px, 8.2vw, 116px);
+      line-height: .94;
+      letter-spacing: -.06em;
+      margin: 0;
+      max-width: 900px;
+      font-weight: 800
+    }
+
+    .title span {
+      display: block
+    }
+
+    .blue {
+      color: #1aaaf1
+    }
+
+    .bottom {
+      display: grid;
+      grid-template-columns: 1.35fr .9fr;
+      gap: 80px;
+      align-items: end;
+      margin-top: 65px
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .72fr 1.35fr;
+      gap: 45px
+    }
+
+    .eyebrow {
+      font: 600 12px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: #747c85;
+      margin-bottom: 12px
+    }
+
+    .contact a,
+    .contact p {
+      font: 600 17px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: #f2f4f6;
+      text-decoration: none;
+      margin: 0
+    }
+
+    .contact a:hover {
+      color: #36b8ff
+    }
+
+    .intro {
+      font: 500 17px/1.8 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: var(--muted);
+      margin: 0;
+      max-width: 430px
+    }
+
+    .directions {
+      display: inline-block;
+      margin-top: 16px;
+      color: #39b9fa !important;
+      font-size: 14px !important
+    }
+
+    .rule {
+      height: 1px;
+      background: var(--line);
+      margin-top: 45px
+    }
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: #616973;
+      font-size: 12px;
+      padding-top: 18px
+    }
+
+    @media(max-width:760px) {
+      .page {
+        width: min(100% - 30px, 1180px);
+        padding: 24px 0
+      }
+
+      .logo {
+        width: 140px;
+        height: 70px
+      }
+
+      .hello {
+        font-size: 12px;
+        text-align: right
+      }
+
+      main {
+        padding-top: 45px
+      }
+
+      .bottom {
+        grid-template-columns: 1fr;
+        gap: 42px;
+        margin-top: 50px
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px
+      }
+
+      .intro {
+        font-size: 15px
+      }
+
+      .foot {
+        display: block;
+        line-height: 1.8
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <img class="logo" src="logo.png" alt="J.S. Truck Repair Centre">
+      <div class="hello">Say hello! <a href="mailto:j.s.truckrepaircentre@gmail.com">j.s.truckrepaircentre@gmail.com</a>
+      </div>
+    </header>
+    <main>
+      <h1 class="title"><span>We Are</span><span>Coming <span class="blue" style="display:inline">Soon</span></span>
+      </h1>
+      <div class="bottom">
+        <div class="contact-grid">
+          <div class="contact">
+            <div class="eyebrow">Call Us</div>
+            <a href="tel:+17093305209">+1 709-330-5209</a>
+          </div>
+          <div class="contact">
+            <div class="eyebrow">Visit Us</div>
+            <p>273 Glidden Rd, Brampton, ON<br>L6W 1H9, Canada</p>
+            <a class="directions" href="https://share.google/nfIL2o4Om4ZSBafiS" target="_blank" rel="noopener">Get
+              Directions ↗</a>
+          </div>
+        </div>
+        <p class="intro">Our new website is on the way. J.S. Truck Repair Centre is here to keep your truck moving with
+          dependable repair service in Brampton.</p>
+      </div>
+    </main>
+    <div class="rule"></div>
+    <footer class="foot"><span>© 2026 J.S. Truck Repair Centre</span><span>Brampton, Ontario</span></footer>
+  </div>
+</body>
+
+</html>
