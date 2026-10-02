@@ -405,8 +405,30 @@ img {
 }
 
 @media (max-width: 767px) {
-  .tq-topbar-hide {
+  .tq-topbar .container {
+    flex-direction: column;
+    gap: .25rem;
+    padding-top: .65rem;
+    padding-bottom: .65rem;
+    text-align: center;
+  }
+
+  .tq-topbar-list {
+    justify-content: center;
+  }
+
+  .tq-topbar-list .tq-topbar-hide {
     display: none;
+  }
+
+  .tq-sameday {
+    font-size: .82rem;
+    letter-spacing: .035em;
+    line-height: 1.4;
+  }
+
+  .tq-sameday .dot {
+    flex-shrink: 0;
   }
 }
 
