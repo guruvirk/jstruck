@@ -5,9 +5,15 @@
   <script>document.documentElement.classList.add('js')</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Services &amp; Booking — Torque Auto Repair Template</title>
+  <title>Services &amp; Booking | J.S. Truck Repair Centre</title>
   <meta name="description"
-    content="Detailed auto repair services, transparent starting prices and turnaround times, an instant cost estimator, and an online appointment booking form — the Torque Bootstrap 5 template services page.">
+    content="Explore truck repair and maintenance services at J.S. Truck Repair Centre in Brampton, Ontario, with service details and appointment booking.">
+  <meta name="theme-color" content="#07090b">
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -30,7 +36,7 @@
             <path
               d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
           </svg>
-          <a href="tel:+15552487100">(555) 248-7100</a>
+          <a href="tel:+17093305209">+1 709-330-5209</a>
         </li>
         <li class="tq-topbar-hide">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -49,26 +55,20 @@
   <header>
     <nav class="tq-nav" aria-label="Primary">
       <div class="container">
-        <a class="tq-brand" href="index.html" aria-label="Torque Auto Repair — home">
-          <span class="tq-brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2-2 2.3-2.3z" />
-            </svg>
-          </span>
-          Tor<b>que</b>
+        <a class="tq-brand" href="index.html" aria-label="J.S. Truck Repair Centre — home">
+          <img class="tq-brand-logo" src="logo.png" alt="J.S. Truck Repair Centre" width="1536" height="1024">
         </a>
 
         <ul class="tq-nav-links tq-nav-desktop" role="list">
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html" class="active">Services</a></li>
-          <li><a href="index.html#pricing">Pricing</a></li>
+          <!-- <li><a href="index.html#pricing">Pricing</a></li> -->
           <li><a href="#book">Book Online</a></li>
           <li><a href="index.html#faq">FAQ</a></li>
         </ul>
 
         <div class="tq-nav-cta tq-nav-desktop">
-          <a href="tel:+15552487100" class="tq-btn tq-btn--ghost tq-btn--sm">(555) 248-7100</a>
+          <a href="tel:+17093305209" class="tq-btn tq-btn--ghost tq-btn--sm">+1 709-330-5209</a>
           <a href="#book" class="tq-btn tq-btn--accent tq-btn--sm">Book a Service</a>
         </div>
 
@@ -84,11 +84,11 @@
     <button class="tq-mobile-close" aria-label="Close menu">&times;</button>
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
-    <a href="index.html#pricing">Pricing</a>
+    <!-- <a href="index.html#pricing">Pricing</a> -->
     <a href="#book">Book Online</a>
     <a href="index.html#faq">FAQ</a>
     <a href="#book" class="tq-btn tq-btn--accent tq-btn--block">Book a Service</a>
-    <a href="tel:+15552487100" class="tq-btn tq-btn--ghost tq-btn--block">(555) 248-7100</a>
+    <a href="tel:+17093305209" class="tq-btn tq-btn--ghost tq-btn--block">+1 709-330-5209</a>
   </nav>
 
   <main id="main">
@@ -96,16 +96,18 @@
     <!-- ============ PAGE BANNER ============ -->
     <section class="tq-banner">
       <div class="tq-banner-bg">
-        <img src="img/banner-bay.jpg" alt="Row of cars raised on hydraulic lifts inside a busy auto repair service bay"
-          width="1600" height="620" fetchpriority="high">
+        <img src="img/banner-bay.jpg" alt="Repair service bays with vehicles raised on hydraulic lifts" width="1600"
+          height="620" fetchpriority="high">
       </div>
       <div class="container">
         <nav class="tq-crumbs" aria-label="Breadcrumb">
           <a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Services &amp; Booking</span>
         </nav>
         <h1>Services &amp; online booking</h1>
-        <p class="tq-lead" style="color:var(--tq-steel-2);margin:0;">Every repair we offer, what's included, honest
-          starting prices and turnaround times — plus an instant estimate and a booking form to lock in your slot.</p>
+        <!-- <p class="tq-lead" style="color:var(--tq-steel-2);margin:0;">Every repair we offer, what's included, honest
+          starting prices and turnaround times — plus an instant estimate and a booking form to lock in your slot.</p> -->
+        <p class="tq-lead" style="color:var(--tq-steel-2);margin:0;">Every repair we offer, what's included, and
+          turnaround times — plus a booking form to lock in your slot.</p>
       </div>
     </section>
     <div class="tq-hazard-thin" role="presentation"></div>
@@ -115,9 +117,11 @@
       <div class="container">
         <div class="tq-shead tq-shead--center tq-reveal" style="margin-bottom:2.5rem;">
           <span class="tq-eyebrow tq-eyebrow--center">Full service menu</span>
-          <h2 class="tq-h2">What we can do for your car</h2>
-          <p class="tq-lead" style="margin-inline:auto;">Filter by category, then book online or call. Prices are
-            starting points on most makes and models — your written estimate confirms the exact figure first.</p>
+          <h2 class="tq-h2">What we can do for your truck</h2>
+          <!-- <p class="tq-lead" style="margin-inline:auto;">Filter by category, then book online or call. Prices are
+            starting points on most makes and models — your written estimate confirms the exact figure first.</p> -->
+          <p class="tq-lead" style="margin-inline:auto;">Filter by category, then book online or call.
+            Your written estimate confirms the exact figure before any work begins.</p>
         </div>
 
         <!-- Filter tabs -->
@@ -157,7 +161,7 @@
                   </svg>Free 27-point inspection</li>
               </ul>
               <div class="tq-svc-meta">
-                <div>From <b>$49</b></div>
+                <!-- <div>From <b>$49</b></div> -->
                 <div>Time <b>30–45 min</b></div>
               </div>
             </div>
@@ -190,7 +194,7 @@
                   </svg>Free wear-report with photos</li>
               </ul>
               <div class="tq-svc-meta">
-                <div>From <b>$149</b></div>
+                <!-- <div>From <b>$149</b></div> -->
                 <div>Time <b>1.5–3 hrs</b></div>
               </div>
             </div>
@@ -204,7 +208,8 @@
               </svg></div>
             <div>
               <h3>Engine Diagnostics</h3>
-              <p>Check-engine light on or car running rough? We run full OBD-II scans and pinpoint the true fault before
+              <p>Check-engine light on or truck running rough? We run full truck diagnostic scans and pinpoint the true
+                fault before
                 quoting any repair.</p>
               <ul>
                 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"
@@ -221,7 +226,7 @@
                   </svg>Fee waived if we do the repair</li>
               </ul>
               <div class="tq-svc-meta">
-                <div>From <b>$89</b></div>
+                <!-- <div>From <b>$89</b></div> -->
                 <div>Time <b>1–2 hrs</b></div>
               </div>
             </div>
@@ -254,7 +259,7 @@
                   </svg>Flat repair &amp; TPMS reset</li>
               </ul>
               <div class="tq-svc-meta">
-                <div>From <b>$120</b></div>
+                <!-- <div>From <b>$120</b></div> -->
                 <div>Time <b>1–2 hrs</b></div>
               </div>
             </div>
@@ -286,7 +291,7 @@
                   </svg>Heater core &amp; blower service</li>
               </ul>
               <div class="tq-svc-meta">
-                <div>From <b>$110</b></div>
+                <!-- <div>From <b>$110</b></div> -->
                 <div>Time <b>1–3 hrs</b></div>
               </div>
             </div>
@@ -303,7 +308,8 @@
               </svg></div>
             <div>
               <h3>Transmission</h3>
-              <p>Fluid flushes, clutch replacement and full rebuilds for automatic, manual and CVT gearboxes that slip,
+              <p>Fluid flushes, clutch replacement and full rebuilds for automatic, manual and automated manual
+                gearboxes that slip,
                 shudder or hesitate.</p>
               <ul>
                 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"
@@ -320,7 +326,7 @@
                   </svg>Rebuild &amp; replacement</li>
               </ul>
               <div class="tq-svc-meta">
-                <div>From <b>$180</b></div>
+                <!-- <div>From <b>$180</b></div> -->
                 <div>Time <b>Same/next day</b></div>
               </div>
             </div>
@@ -352,7 +358,7 @@
                   </svg>Terminal clean &amp; warranty</li>
               </ul>
               <div class="tq-svc-meta">
-                <div>From <b>$139</b></div>
+                <!-- <div>From <b>$139</b></div> -->
                 <div>Time <b>30–60 min</b></div>
               </div>
             </div>
@@ -367,24 +373,24 @@
               </svg></div>
             <div>
               <h3>Safety &amp; Emissions Inspection</h3>
-              <p>State safety inspection, emissions testing and thorough pre-purchase checks with a clear pass/fail
+              <p>Truck safety inspection, emissions testing and thorough pre-purchase checks with a clear pass/fail
                 report you can actually trust.</p>
               <ul>
                 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"
                     stroke-linejoin="round" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5" />
-                  </svg>State safety &amp; emissions</li>
+                  </svg>Truck safety &amp; emissions</li>
                 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"
                     stroke-linejoin="round" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5" />
-                  </svg>Pre-purchase used-car check</li>
+                  </svg>Pre-purchase used-truck check</li>
                 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"
                     stroke-linejoin="round" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5" />
                   </svg>Written report with photos</li>
               </ul>
               <div class="tq-svc-meta">
-                <div>From <b>$39</b></div>
+                <!-- <div>From <b>$39</b></div> -->
                 <div>Time <b>30–60 min</b></div>
               </div>
             </div>
@@ -398,14 +404,18 @@
       <div class="container">
         <div class="tq-shead tq-shead--center tq-reveal" style="margin-bottom:3rem;">
           <span class="tq-eyebrow tq-eyebrow--center">Book in two minutes</span>
-          <h2 class="tq-h2">Get an estimate &amp; reserve your slot</h2>
-          <p class="tq-lead" style="margin-inline:auto;">Ballpark the cost first, then send us your preferred day and
+          <!-- <h2 class="tq-h2">Get an estimate &amp; reserve your slot</h2> -->
+          <h2 class="tq-h2">Reserve your slot</h2>
+          <!-- <p class="tq-lead" style="margin-inline:auto;">Ballpark the cost first, then send us your preferred day and
+            time. We'll confirm by phone within one business hour.</p> -->
+          <p class="tq-lead" style="margin-inline:auto;">Send us your preferred day and
             time. We'll confirm by phone within one business hour.</p>
         </div>
 
-        <div class="tq-visit-grid" style="align-items:start;">
+        <!-- <div class="tq-visit-grid" style="align-items:start;"> -->
+        <div>
           <!-- Estimator -->
-          <div class="tq-estimator tq-reveal" data-estimator>
+          <!-- <div class="tq-estimator tq-reveal" data-estimator>
             <h3 style="color:#fff;font-size:1.7rem;margin-top:0;">Instant cost estimator</h3>
             <p style="color:var(--tq-steel-2);font-size:.98rem;">Pick a service and your vehicle type for a ballpark
               range. This is a guide only — your exact price is confirmed in a written quote.</p>
@@ -424,13 +434,13 @@
               </select>
             </div>
             <div class="tq-field">
-              <label for="est_vehicle">Vehicle type</label>
+              <label for="est_vehicle">Truck type</label>
               <select id="est_vehicle" name="est_vehicle">
-                <option value="compact">Compact car</option>
-                <option value="sedan" selected>Sedan</option>
-                <option value="suv">SUV / crossover</option>
-                <option value="truck">Truck / van</option>
-                <option value="luxury">Luxury / European</option>
+                <option value="light">Light-duty truck</option>
+                <option value="medium" selected>Medium-duty truck</option>
+                <option value="heavy">Heavy-duty truck</option>
+                <option value="box">Box truck</option>
+                <option value="tractor">Semi-truck / tractor</option>
               </select>
             </div>
             <div class="tq-estimate-out" data-estimate-out aria-live="polite">
@@ -438,7 +448,7 @@
               <div class="val">$—</div>
               <small>Pick a service to see an estimate</small>
             </div>
-          </div>
+          </div> -->
 
           <!-- Booking form -->
           <div class="tq-book-card tq-reveal d1">
@@ -452,7 +462,7 @@
                 </div>
                 <div class="tq-field">
                   <label for="b-phone">Phone</label>
-                  <input id="b-phone" name="phone" type="tel" placeholder="(555) 000-0000" required>
+                  <input id="b-phone" name="phone" type="tel" placeholder="(709) 000-0000" required>
                   <span class="err">Enter a valid phone number.</span>
                 </div>
               </div>
@@ -480,7 +490,7 @@
                 </div>
                 <div class="tq-field">
                   <label for="b-vehicle">Vehicle (make/year)</label>
-                  <input id="b-vehicle" name="vehicle" type="text" placeholder="e.g. 2018 Toyota" required>
+                  <input id="b-vehicle" name="vehicle" type="text" placeholder="e.g. 2018 Freightliner" required>
                   <span class="err">Enter your vehicle.</span>
                 </div>
               </div>
@@ -513,21 +523,20 @@
                 within one business hour to confirm the day, time, and quote.</div>
             </form>
           </div>
-        </div>
+      </div>
       </div>
     </section>
 
     <!-- ============ CTA BAND ============ -->
     <section class="tq-cta tq-hazard">
-      <div
-        style="position:absolute;inset:0;background:linear-gradient(rgba(18,20,23,.93),rgba(18,20,23,.93));z-index:1;">
+      <div style="position:absolute;inset:0;background:linear-gradient(rgba(7,9,11,.93),rgba(7,9,11,.93));z-index:1;">
       </div>
       <div class="container">
         <span class="tq-eyebrow tq-eyebrow--center">Prefer to talk it through?</span>
         <h2>Call the shop directly</h2>
         <p>Our service advisors can book you in, answer questions, and give ballpark pricing right over the phone.</p>
         <div class="tq-cta-actions">
-          <a href="tel:+15552487100" class="tq-btn tq-btn--accent tq-btn--lg">Call (555) 248-7100</a>
+          <a href="tel:+17093305209" class="tq-btn tq-btn--accent tq-btn--lg">Call +1 709-330-5209</a>
           <a href="index.html#visit" class="tq-btn tq-btn--ghost tq-btn--lg">Hours &amp; directions</a>
         </div>
       </div>
@@ -541,32 +550,26 @@
     <div class="container">
       <div class="tq-footer-grid">
         <div>
-          <a class="tq-brand" href="index.html" aria-label="Torque Auto Repair — home">
-            <span class="tq-brand-mark" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2-2 2.3-2.3z" />
-              </svg>
-            </span>
-            Tor<b>que</b>
+          <a class="tq-brand" href="index.html" aria-label="J.S. Truck Repair Centre — home">
+            <img class="tq-brand-logo" src="logo.png" alt="J.S. Truck Repair Centre" width="1536" height="1024">
           </a>
-          <p class="tq-footer-about">Family-owned, ASE-certified auto repair you can trust. Honest quotes, quality
+          <p class="tq-footer-about">Family-owned, ASE-certified truck repair you can trust. Honest quotes, quality
             parts, and a 24-month warranty on every job.</p>
-          <div class="tq-footer-social">
-            <a href="#" aria-label="Torque on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <!-- <div class="tq-footer-social">
+            <a href="#" aria-label="J.S. Truck Repair Centre on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z" />
               </svg></a>
-            <a href="#" aria-label="Torque on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            <a href="#" aria-label="J.S. Truck Repair Centre on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" aria-hidden="true">
                 <rect x="3" y="3" width="18" height="18" rx="5" />
                 <circle cx="12" cy="12" r="4" />
                 <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
               </svg></a>
-            <a href="#" aria-label="Torque on YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <a href="#" aria-label="J.S. Truck Repair Centre on YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M23 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5A2.5 2.5 0 0 0 1.4 7.3C1 8.8 1 12 1 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5a2.5 2.5 0 0 0 1.8-1.8C23 15.2 23 12 23 12zM10 15V9l5 3z" />
               </svg></a>
-          </div>
+          </div> -->
         </div>
 
         <div>
@@ -585,7 +588,7 @@
           <h5>Shop</h5>
           <ul class="tq-footer-links">
             <li><a href="index.html#services">All Services</a></li>
-            <li><a href="index.html#pricing">Pricing</a></li>
+            <!-- <li><a href="index.html#pricing">Pricing</a></li> -->
             <li><a href="index.html#faq">FAQ</a></li>
             <li><a href="#book">Book Online</a></li>
             <li><a href="index.html#visit">Hours &amp; Location</a></li>
@@ -601,7 +604,7 @@
                 <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
-              <span>2140 Ironside Avenue<br>Riverton, CA 90210</span>
+              <span>273 Glidden Rd, Brampton, ON<br>L6W 1H9, Canada</span>
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -609,7 +612,15 @@
                 <path
                   d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
-              <span><a href="tel:+15552487100">(555) 248-7100</a></span>
+              <span><a href="tel:+17093305209">+1 709-330-5209</a></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m3 7 9 6 9-6" />
+              </svg>
+              <span><a href="mailto:info@jstruck.ca">info@jstruck.ca</a></span>
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -624,8 +635,9 @@
       </div>
 
       <div class="tq-footer-bottom">
-        <p style="margin:0;">&copy; 2026 Torque Auto Repair. All rights reserved.</p>
-        <p style="margin:0;">Built with Bootstrap 5 · <a href="index.html">Back to home</a></p>
+        <p style="margin:0;">&copy; 2026 J.S. Truck Repair Centre. All rights reserved.</p>
+        <p style="margin:0;">Built by <a href="https://www.techvibestudios.in/" target="_blank"
+            rel="noopener noreferrer">Tech Vibe Studios</a> · <a href="index.html">Back to home</a></p>
       </div>
     </div>
   </footer>

@@ -1,5 +1,5 @@
 /* =====================================================================
-   TORQUE — vanilla JavaScript. No jQuery, no plugins.
+   J.S. Truck Repair Centre — vanilla JavaScript. No jQuery, no plugins.
    One function per feature. Guard clauses. Respects reduced-motion.
    ===================================================================== */
 (function () {
@@ -191,7 +191,7 @@
     var out = form.querySelector("[data-estimate-out]");
     if (!svc || !out) return;
 
-    // Base price ranges (USD) keyed by service value
+    // Base price ranges keyed by service value
     var prices = {
       oil:        [49, 89],
       brakes:     [149, 320],
@@ -203,7 +203,7 @@
       inspection: [39, 59]
     };
     // Vehicle multiplier
-    var mult = { compact: 1, sedan: 1.08, suv: 1.2, truck: 1.32, luxury: 1.45 };
+    var mult = { light: 1, medium: 1.08, heavy: 1.2, box: 1.32, tractor: 1.45 };
 
     var update = function () {
       var key = svc.value;
@@ -212,7 +212,7 @@
         out.querySelector("small").textContent = "Pick a service to see an estimate";
         return;
       }
-      var m = mult[vehicle && vehicle.value ? vehicle.value : "sedan"] || 1;
+      var m = mult[vehicle && vehicle.value ? vehicle.value : "medium"] || 1;
       var lo = Math.round(prices[key][0] * m);
       var hi = Math.round(prices[key][1] * m);
       var text = lo === hi ? ("$" + lo) : ("$" + lo + "–$" + hi);

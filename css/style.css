@@ -1,12 +1,12 @@
 /* =====================================================================
-   TORQUE — Free Bootstrap 5 template for auto repair shops & mechanics
-   Custom design layer. Palette: charcoal/graphite + safety-orange.
+   J.S. Truck Repair Centre — Bootstrap 5 design
+   Custom design layer. Palette: charcoal/graphite + brand blue.
    Type: Saira Condensed (display) + Barlow (body).
    ===================================================================== */
 
 :root {
   /* Charcoal / graphite base */
-  --tq-ink: #121417;
+  --tq-ink: #07090b;
   /* near-black base */
   --tq-graphite: #191C21;
   /* dark surface */
@@ -36,11 +36,11 @@
   --tq-heading: #16191D;
   /* headings on light */
 
-  /* Accent — safety orange (committed) */
-  --tq-orange: #FF6A1A;
-  --tq-orange-600: #EA5A0B;
-  --tq-orange-700: #C94A05;
-  --tq-orange-soft: #FFE7D6;
+  /* Accent — J.S. Truck brand blue */
+  --tq-blue: #079ee8;
+  --tq-blue-600: #0675ad;
+  --tq-blue-700: #055c88;
+  --tq-blue-soft: #e0f3fd;
 
   --tq-green: #2FBF71;
   /* checks / open */
@@ -95,12 +95,12 @@ p {
 }
 
 a {
-  color: var(--tq-orange-600);
+  color: var(--tq-blue-600);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--tq-orange-700);
+  color: var(--tq-blue-700);
 }
 
 img {
@@ -119,7 +119,7 @@ img {
   left: 12px;
   top: -60px;
   z-index: 2000;
-  background: var(--tq-orange);
+  background: var(--tq-blue);
   color: #fff;
   font-weight: 700;
   padding: .6rem 1rem;
@@ -136,7 +136,7 @@ img {
 }
 
 :focus-visible {
-  outline: 3px solid var(--tq-orange);
+  outline: 3px solid var(--tq-blue);
   outline-offset: 2px;
 }
 
@@ -155,14 +155,14 @@ img {
 /* Hazard stripe helper */
 .tq-hazard {
   background-image: repeating-linear-gradient(-45deg,
-      var(--tq-orange) 0, var(--tq-orange) 14px,
+      var(--tq-blue) 0, var(--tq-blue) 14px,
       var(--tq-ink) 14px, var(--tq-ink) 28px);
 }
 
 .tq-hazard-thin {
   height: 6px;
   background-image: repeating-linear-gradient(-45deg,
-      var(--tq-orange) 0, var(--tq-orange) 12px,
+      var(--tq-blue) 0, var(--tq-blue) 12px,
       #1b1d21 12px, #1b1d21 24px);
 }
 
@@ -205,19 +205,19 @@ img {
   text-transform: uppercase;
   letter-spacing: .16em;
   font-size: .82rem;
-  color: var(--tq-orange-600);
+  color: var(--tq-blue-600);
   margin-bottom: 1rem;
 }
 
 .tq-dark .tq-eyebrow {
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 .tq-eyebrow::before {
   content: "";
   width: 26px;
   height: 3px;
-  background: var(--tq-orange);
+  background: var(--tq-blue);
   display: inline-block;
 }
 
@@ -279,13 +279,13 @@ img {
 }
 
 .tq-btn--accent {
-  background: var(--tq-orange);
+  background: var(--tq-blue);
   color: #fff;
-  box-shadow: 0 10px 20px -10px rgba(255, 106, 26, .7);
+  box-shadow: 0 10px 20px -10px rgba(7, 158, 232, .7);
 }
 
 .tq-btn--accent:hover {
-  background: var(--tq-orange-600);
+  background: var(--tq-blue-600);
   color: #fff;
 }
 
@@ -306,9 +306,9 @@ img {
 }
 
 .tq-btn--ghost:hover {
-  border-color: var(--tq-orange);
+  border-color: var(--tq-blue);
   color: #fff;
-  background: rgba(255, 106, 26, .1);
+  background: rgba(7, 158, 232, .1);
 }
 
 .tq-btn--outline {
@@ -318,8 +318,8 @@ img {
 }
 
 .tq-btn--outline:hover {
-  border-color: var(--tq-orange);
-  color: var(--tq-orange-700);
+  border-color: var(--tq-blue);
+  color: var(--tq-blue-700);
 }
 
 .tq-btn--sm {
@@ -381,7 +381,7 @@ img {
 .tq-topbar svg {
   width: 15px;
   height: 15px;
-  color: var(--tq-orange);
+  color: var(--tq-blue);
   flex: none;
 }
 
@@ -415,7 +415,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(18, 20, 23, .98);
+  background: rgba(7, 9, 11, .98);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--tq-line-dark);
   transition: box-shadow .2s ease, background-color .2s ease;
@@ -446,12 +446,28 @@ img {
   line-height: 1;
 }
 
+.tq-brand-logo {
+  display: block;
+  width: 126px;
+  height: 84px;
+  object-fit: contain;
+}
+
+.tq-footer .tq-brand-logo {
+  width: 180px;
+  height: 120px;
+}
+
+.tq-footer-contact a {
+  overflow-wrap: anywhere;
+}
+
 .tq-brand:hover {
   color: #fff;
 }
 
 .tq-brand b {
-  color: var(--tq-orange);
+  color: var(--tq-blue);
   font-weight: 700;
 }
 
@@ -459,7 +475,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: var(--tq-radius);
-  background: var(--tq-orange);
+  background: var(--tq-blue);
   display: grid;
   place-items: center;
   flex: none;
@@ -498,7 +514,7 @@ img {
   bottom: -2px;
   height: 3px;
   width: 0;
-  background: var(--tq-orange);
+  background: var(--tq-blue);
   transition: width .2s ease;
 }
 
@@ -557,7 +573,7 @@ img {
   height: 100%;
   width: min(86vw, 340px);
   background: var(--tq-graphite);
-  border-left: 3px solid var(--tq-orange);
+  border-left: 3px solid var(--tq-blue);
   transform: translateX(100%);
   transition: transform .28s ease;
   z-index: 1200;
@@ -584,7 +600,7 @@ img {
 }
 
 .tq-mobile a:hover {
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 .tq-mobile .tq-btn {
@@ -651,7 +667,7 @@ body.tq-lock {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(100deg, rgba(18, 20, 23, .97) 0%, rgba(18, 20, 23, .86) 42%, rgba(18, 20, 23, .55) 100%);
+    linear-gradient(100deg, rgba(7, 9, 11, .97) 0%, rgba(7, 9, 11, .86) 42%, rgba(7, 9, 11, .55) 100%);
 }
 
 .tq-hero .container {
@@ -671,9 +687,9 @@ body.tq-lock {
   display: inline-flex;
   align-items: center;
   gap: .6rem;
-  background: rgba(255, 106, 26, .14);
-  border: 1px solid rgba(255, 106, 26, .4);
-  color: var(--tq-orange);
+  background: rgba(7, 158, 232, .14);
+  border: 1px solid rgba(7, 158, 232, .4);
+  color: var(--tq-blue);
   font-family: var(--tq-display);
   font-weight: 600;
   text-transform: uppercase;
@@ -691,7 +707,7 @@ body.tq-lock {
 }
 
 .tq-hero h1 .u {
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 .tq-hero-sub {
@@ -721,7 +737,7 @@ body.tq-lock {
 .tq-hero-phone svg {
   width: 20px;
   height: 20px;
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 /* Quick-quote mini form card */
@@ -745,7 +761,7 @@ body.tq-lock {
 .tq-quote-head svg {
   width: 26px;
   height: 26px;
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 .tq-quote-head h3 {
@@ -802,8 +818,8 @@ body.tq-lock {
 
 .tq-field input:focus, .tq-field select:focus, .tq-field textarea:focus {
   outline: none;
-  border-color: var(--tq-orange);
-  box-shadow: 0 0 0 3px rgba(255, 106, 26, .16);
+  border-color: var(--tq-blue);
+  box-shadow: 0 0 0 3px rgba(7, 158, 232, .16);
 }
 
 .tq-field-row {
@@ -881,7 +897,7 @@ body.tq-lock {
 }
 
 .tq-trust-num .u {
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 .tq-trust-label {
@@ -914,7 +930,7 @@ body.tq-lock {
   top: 0;
   height: 4px;
   width: 100%;
-  background: var(--tq-orange);
+  background: var(--tq-blue);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform .2s ease;
@@ -943,7 +959,7 @@ body.tq-lock {
 .tq-service-ico svg {
   width: 30px;
   height: 30px;
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 .tq-service h3 {
@@ -982,7 +998,7 @@ body.tq-lock {
 }
 
 .tq-price-from b {
-  color: var(--tq-orange-700);
+  color: var(--tq-blue-700);
   font-size: 1.5rem;
 }
 
@@ -999,7 +1015,7 @@ body.tq-lock {
 }
 
 .tq-service-link:hover {
-  color: var(--tq-orange-700);
+  color: var(--tq-blue-700);
 }
 
 .tq-service-link svg {
@@ -1029,7 +1045,7 @@ body.tq-lock {
   position: absolute;
   left: -18px;
   bottom: 26px;
-  background: var(--tq-orange);
+  background: var(--tq-blue);
   color: #fff;
   padding: 1.1rem 1.3rem;
   border-radius: var(--tq-radius);
@@ -1068,20 +1084,20 @@ body.tq-lock {
   height: 50px;
   flex: none;
   border-radius: var(--tq-radius);
-  background: rgba(255, 106, 26, .12);
-  border: 1px solid rgba(255, 106, 26, .28);
+  background: rgba(7, 158, 232, .12);
+  border: 1px solid rgba(7, 158, 232, .28);
   display: grid;
   place-items: center;
 }
 
 .tq-dark .tq-why-ico {
-  background: rgba(255, 106, 26, .16);
+  background: rgba(7, 158, 232, .16);
 }
 
 .tq-why-ico svg {
   width: 26px;
   height: 26px;
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 .tq-why-item h4 {
@@ -1137,7 +1153,7 @@ body.tq-lock {
   font-family: var(--tq-display);
   font-weight: 700;
   font-size: 1.3rem;
-  color: var(--tq-orange-700);
+  color: var(--tq-blue-700);
   white-space: nowrap;
 }
 
@@ -1154,7 +1170,7 @@ body.tq-lock {
   margin-top: 2rem;
   background: #fff;
   border: 1px solid var(--tq-line);
-  border-left: 4px solid var(--tq-orange);
+  border-left: 4px solid var(--tq-blue);
   border-radius: var(--tq-radius);
   padding: 1.1rem 1.3rem;
   font-size: .95rem;
@@ -1179,8 +1195,8 @@ body.tq-lock {
   font-size: 3.6rem;
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 2px var(--tq-orange);
-  text-stroke: 2px var(--tq-orange);
+  -webkit-text-stroke: 2px var(--tq-blue);
+  text-stroke: 2px var(--tq-blue);
   margin-bottom: .4rem;
 }
 
@@ -1197,7 +1213,7 @@ body.tq-lock {
 .tq-step-ico svg {
   width: 32px;
   height: 32px;
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 .tq-step h3 {
@@ -1234,7 +1250,7 @@ body.tq-lock {
 }
 
 .tq-stat-num .u {
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 .tq-stat-label {
@@ -1278,7 +1294,7 @@ body.tq-lock {
   position: absolute;
   left: 12px;
   top: 12px;
-  background: var(--tq-orange);
+  background: var(--tq-blue);
   color: #fff;
   font-family: var(--tq-display);
   font-weight: 600;
@@ -1295,7 +1311,7 @@ body.tq-lock {
 }
 
 .tq-mechanic-role {
-  color: var(--tq-orange-700);
+  color: var(--tq-blue-700);
   font-family: var(--tq-display);
   font-weight: 600;
   text-transform: uppercase;
@@ -1348,7 +1364,7 @@ body.tq-lock {
 }
 
 .tq-testi-stars {
-  color: var(--tq-orange);
+  color: var(--tq-blue);
   display: flex;
   gap: 2px;
   margin-bottom: 1rem;
@@ -1416,8 +1432,8 @@ body.tq-lock {
 }
 
 .tq-testi-btn:hover {
-  background: var(--tq-orange);
-  border-color: var(--tq-orange);
+  background: var(--tq-blue);
+  border-color: var(--tq-blue);
 }
 
 .tq-testi-btn svg {
@@ -1448,8 +1464,8 @@ body.tq-lock {
 }
 
 .tq-brand-chip:hover {
-  border-color: var(--tq-orange);
-  color: var(--tq-orange-700);
+  border-color: var(--tq-blue);
+  color: var(--tq-blue-700);
 }
 
 /* ---------------- Coupons / specials ---------------- */
@@ -1462,7 +1478,7 @@ body.tq-lock {
 .tq-coupon {
   position: relative;
   background: #fff;
-  border: 2px dashed var(--tq-orange);
+  border: 2px dashed var(--tq-blue);
   border-radius: var(--tq-radius-lg);
   padding: 1.8rem;
   overflow: hidden;
@@ -1491,7 +1507,7 @@ body.tq-lock {
   font-family: var(--tq-display);
   font-weight: 700;
   font-size: 2.6rem;
-  color: var(--tq-orange-700);
+  color: var(--tq-blue-700);
   line-height: 1;
 }
 
@@ -1521,7 +1537,7 @@ body.tq-lock {
 }
 
 .tq-coupon-code b {
-  color: var(--tq-orange);
+  color: var(--tq-blue);
   border-left: 1px dashed rgba(255, 255, 255, .3);
   padding-left: .5rem;
 }
@@ -1549,7 +1565,7 @@ body.tq-lock {
 }
 
 .tq-faq details[open] {
-  border-color: var(--tq-orange);
+  border-color: var(--tq-blue);
   box-shadow: var(--tq-shadow-sm);
 }
 
@@ -1603,7 +1619,7 @@ body.tq-lock {
 }
 
 .tq-faq details[open] summary .tq-faq-ico {
-  background: var(--tq-orange);
+  background: var(--tq-blue);
 }
 
 .tq-faq details[open] summary .tq-faq-ico::before,
@@ -1698,7 +1714,7 @@ body.tq-lock {
 }
 
 .tq-hours-table li.today {
-  background: var(--tq-orange-soft);
+  background: var(--tq-blue-soft);
   margin: 0 -.8rem;
   padding: .7rem .8rem;
   border-radius: var(--tq-radius);
@@ -1720,7 +1736,7 @@ body.tq-lock {
 .tq-visit-line svg {
   width: 22px;
   height: 22px;
-  color: var(--tq-orange);
+  color: var(--tq-blue);
   flex: none;
   margin-top: 2px;
 }
@@ -1754,7 +1770,7 @@ body.tq-lock {
 .tq-map-diag {
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(-45deg, transparent 0 40px, rgba(255, 106, 26, .04) 40px 41px);
+  background: repeating-linear-gradient(-45deg, transparent 0 40px, rgba(7, 158, 232, .04) 40px 41px);
 }
 
 .tq-map-pin {
@@ -1767,10 +1783,10 @@ body.tq-lock {
   width: 26px;
   height: 26px;
   border-radius: 50% 50% 50% 0;
-  background: var(--tq-orange);
+  background: var(--tq-blue);
   transform: rotate(-45deg);
   margin: 0 auto 1.4rem;
-  box-shadow: 0 0 0 8px rgba(255, 106, 26, .2);
+  box-shadow: 0 0 0 8px rgba(7, 158, 232, .2);
 }
 
 .tq-map .tq-btn {
@@ -1829,7 +1845,7 @@ body.tq-lock {
 }
 
 .tq-footer-links a:hover {
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 .tq-footer-contact {
@@ -1850,7 +1866,7 @@ body.tq-lock {
 .tq-footer-contact svg {
   width: 18px;
   height: 18px;
-  color: var(--tq-orange);
+  color: var(--tq-blue);
   flex: none;
   margin-top: 3px;
 }
@@ -1873,8 +1889,8 @@ body.tq-lock {
 }
 
 .tq-footer-social a:hover {
-  background: var(--tq-orange);
-  border-color: var(--tq-orange);
+  background: var(--tq-blue);
+  border-color: var(--tq-blue);
   color: #fff;
 }
 
@@ -1900,7 +1916,7 @@ body.tq-lock {
 }
 
 .tq-footer-bottom a:hover {
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 /* ---------------- Page banner (services.html) ---------------- */
@@ -1929,7 +1945,7 @@ body.tq-lock {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(18, 20, 23, .95), rgba(18, 20, 23, .7));
+  background: linear-gradient(90deg, rgba(7, 9, 11, .95), rgba(7, 9, 11, .7));
 }
 
 .tq-banner .container {
@@ -1956,7 +1972,7 @@ body.tq-lock {
 }
 
 .tq-crumbs a:hover {
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 /* ---------------- Filter tabs (services page) ---------------- */
@@ -1984,8 +2000,8 @@ body.tq-lock {
 }
 
 .tq-filter-btn:hover {
-  border-color: var(--tq-orange);
-  color: var(--tq-orange-700);
+  border-color: var(--tq-blue);
+  color: var(--tq-blue-700);
 }
 
 .tq-filter-btn.active {
@@ -2027,7 +2043,7 @@ body.tq-lock {
 .tq-svc-detail-card .ico svg {
   width: 32px;
   height: 32px;
-  color: var(--tq-orange);
+  color: var(--tq-blue);
 }
 
 .tq-svc-detail-card h3 {
@@ -2079,7 +2095,7 @@ body.tq-lock {
 .tq-svc-meta b {
   display: block;
   font-size: 1.3rem;
-  color: var(--tq-orange-700);
+  color: var(--tq-blue-700);
 }
 
 /* Estimator / calculator (services page) */
@@ -2127,7 +2143,7 @@ body.tq-lock {
   font-family: var(--tq-display);
   font-weight: 700;
   font-size: 3rem;
-  color: var(--tq-orange);
+  color: var(--tq-blue);
   line-height: 1.1;
 }
 
