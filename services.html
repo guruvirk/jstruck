@@ -6,7 +6,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLG3TF592L"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-ZLG3TF592L');
@@ -462,7 +462,12 @@
           <!-- Booking form -->
           <div class="tq-book-card tq-reveal d1">
             <h3 style="font-size:1.7rem;margin-top:0;">Request an appointment</h3>
-            <form data-validate aria-label="Appointment booking">
+            <form action="https://api.web3forms.com/submit" method="POST" data-validate
+              aria-label="Appointment booking">
+              <!-- Web3Forms Configuration -->
+              <input type="hidden" name="access_key" value="07f56d12-43a9-46e2-b16c-0250f7abe3f5">
+              <input type="hidden" name="subject" value="New Appointment Booking Request from {field:name}">
+
               <div class="tq-field-row">
                 <div class="tq-field">
                   <label for="b-name">Full name</label>
@@ -475,11 +480,13 @@
                   <span class="err">Enter a valid phone number.</span>
                 </div>
               </div>
+
               <div class="tq-field">
                 <label for="b-email">Email</label>
                 <input id="b-email" name="email" type="email" placeholder="you@example.com" required>
                 <span class="err">Enter a valid email.</span>
               </div>
+
               <div class="tq-field-row">
                 <div class="tq-field">
                   <label for="b-service">Service needed</label>
@@ -503,6 +510,7 @@
                   <span class="err">Enter your vehicle.</span>
                 </div>
               </div>
+
               <div class="tq-field-row">
                 <div class="tq-field">
                   <label for="b-date">Preferred date</label>
@@ -521,18 +529,20 @@
                   <span class="err">Choose a time.</span>
                 </div>
               </div>
+
               <div class="tq-field">
                 <label for="b-notes">Anything else? (optional)</label>
                 <textarea id="b-notes" name="notes"
                   placeholder="Symptoms, noises, warning lights, or a coupon code…"></textarea>
               </div>
+
               <button type="submit" class="tq-btn tq-btn--accent tq-btn--block">Request appointment</button>
               <p class="tq-form-note">We'll call to confirm your slot and price. No deposit required.</p>
               <div class="tq-form-success">Thanks — your appointment request is in! A service advisor will call you
                 within one business hour to confirm the day, time, and quote.</div>
             </form>
           </div>
-      </div>
+        </div>
       </div>
     </section>
 
